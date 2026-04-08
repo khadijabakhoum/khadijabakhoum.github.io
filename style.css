@@ -1,0 +1,335 @@
+/* ===== VARIABLES ===== */
+:root {
+  --rose: #ad2d5a;
+  --rose-fonce: #7a1038;
+  --rose-pale: #f9eef3;
+  --noir: #1a1a1a;
+  --gris: #888;
+  --blanc: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--blanc);
+  color: var(--noir);
+}
+
+/* ===== HEADER ===== */
+header {
+  background: var(--blanc);
+  border-bottom: 1px solid #f0e0e0;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(200,100,100,0.07);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: var(--rose-fonce);
+}
+
+.logo em {
+  font-style: italic;
+  color: var(--rose);
+}
+
+/* ===== BARRE DE RECHERCHE ===== */
+.recherche-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.recherche-wrap input {
+  padding: 10px 18px;
+  border: 1.5px solid var(--rose);
+  border-radius: 99px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  outline: none;
+  width: 220px;
+  transition: border-color 0.3s;
+}
+
+.recherche-wrap input:focus {
+  border-color: var(--rose-fonce);
+}
+
+.recherche-wrap button {
+  padding: 10px 20px;
+  background: var(--rose-fonce);
+  color: white;
+  border: none;
+  border-radius: 99px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.recherche-wrap button:hover {
+  background: var(--rose);
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: var(--rose-pale);
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: var(--rose-fonce);
+  margin-bottom: 16px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--rose);
+}
+
+.hero p {
+  color: var(--gris);
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 99px;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.btn-whatsapp:hover {
+  opacity: 0.85;
+}
+
+/* ===== SECTION PRODUITS ===== */
+.section {
+  padding: 60px 40px;
+}
+
+.section-titre {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-titre h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--noir);
+}
+
+.section-titre h2 em {
+  font-style: italic;
+  color: var(--rose-fonce);
+}
+
+.section-titre p {
+  color: var(--gris);
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+/* ===== GRILLE PRODUITS ===== */
+.grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.carte {
+  background: var(--blanc);
+  border: 1px solid #f0e0e0;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carte:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(200,100,100,0.12);
+}
+
+.carte img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.carte-info {
+  padding: 16px;
+}
+
+.carte-nom {
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: var(--noir);
+}
+
+.carte-prix {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--rose-fonce);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.btn-commander {
+  width: 100%;
+  padding: 10px;
+  background: var(--rose-pale);
+  color: var(--rose-fonce);
+  border: 1.5px solid var(--rose);
+  border-radius: 99px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-commander:hover {
+  background: var(--rose-fonce);
+  color: white;
+  border-color: var(--rose-fonce);
+}
+
+/* ===== MESSAGE VIDE ===== */
+.message-vide {
+  text-align: center;
+  color: var(--gris);
+  padding: 40px;
+  font-size: 0.95rem;
+  display: none;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+  background: var(--rose-pale);
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--rose-fonce);
+  margin-bottom: 12px;
+}
+
+.contact p {
+  color: var(--gris);
+  margin-bottom: 28px;
+  font-size: 0.9rem;
+}
+
+/* ===== FORMULAIRE ===== */
+.formulaire {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formulaire input,
+.formulaire textarea {
+  padding: 12px 18px;
+  border: 1.5px solid var(--rose);
+  border-radius: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  outline: none;
+  transition: border-color 0.3s;
+  background: white;
+}
+
+.formulaire input:focus,
+.formulaire textarea:focus {
+  border-color: var(--rose-fonce);
+}
+
+.formulaire textarea {
+  height: 120px;
+  resize: none;
+}
+
+.formulaire button {
+  padding: 13px;
+  background: var(--rose-fonce);
+  color: white;
+  border: none;
+  border-radius: 99px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formulaire button:hover {
+  background: var(--rose);
+}
+
+/* ===== MESSAGE CONFIRMATION ===== */
+#message-confirmation {
+  display: none;
+  background: #e8f8ee;
+  border: 1px solid #a8d8b8;
+  color: #2d7a4f;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.8rem;
+  color: var(--gris);
+  border-top: 1px solid #f0e0e0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  header { padding: 16px 20px; flex-wrap: wrap; gap: 12px; }
+  .hero { padding: 50px 20px; }
+  .hero h1 { font-size: 2rem; }
+  .section { padding: 40px 20px; }
+  .contact { padding: 40px 20px; }
+  .recherche-wrap input { width: 140px; }
+}

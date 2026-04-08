@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaja's Shop — Beauté & Cosmétiques</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="logo">Jaja's <em>Shop</em></div>
+
+  <div class="recherche-wrap">
+    <input type="text" id="champRecherche" placeholder="Rechercher..." />
+    <button onclick="rechercherProduits()">
+      <i class="fa-solid fa-magnifying-glass"></i> Chercher
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <h1>La beauté qui vous <em>ressemble</em></h1>
+  <p>Découvrez notre sélection de cosmétiques — gloss, fonds de teint, soins et parfums pour sublimer chaque femme.</p>
+  <a class="btn-whatsapp" href="https://wa.me/221784734432" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> Commander sur WhatsApp
+  </a>
+</section>
+
+<!-- ===== SECTION PRODUITS ===== -->
+<section class="section">
+  <div class="section-titre">
+    <h2>Nos <em>produits</em></h2>
+    <p>Sélection premium de cosmétiques à prix reduit !</p>
+  </div>
+
+  <div class="grille" id="grille-produits"></div>
+  <p class="message-vide" id="message-vide">Aucun produit trouvé pour cette recherche.</p>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact">
+  <h2>Contactez-nous</h2>
+  <p>Une question ? Écrivez-nous, on vous répond rapidement !</p>
+
+  <div class="formulaire">
+    <input type="text" id="nom" placeholder="Votre nom" />
+    <input type="text" id="telephone" placeholder="Votre téléphone" />
+    <textarea id="message" placeholder="Votre message..."></textarea>
+    <button onclick="envoyerMessage()">
+      <i class="fa-solid fa-paper-plane"></i> Envoyer
+    </button>
+    <div id="message-confirmation">
+      ✅ Merci ! Votre message a bien été envoyé. On vous contacte bientôt.
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  © 2026 Jaja's Shop — Fait avec ❤️ à Dakar
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
