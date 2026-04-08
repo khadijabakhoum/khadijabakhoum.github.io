@@ -2,18 +2,18 @@
 // 1. LES DONNÉES (les produits)
 // ===========================
 var produits = [
-  { nom: "Gloss Brillant Rose Nude",      prix: 4500,  image: "img/img1.jpg" },
-  { nom: "Rouge à Lèvres Matte Bordeaux", prix: 6800,  image: "img/img2.jpg" },
-  { nom: "Fond de Teint Fluide HD",        prix: 18500, image: "img/img3.jpg" },
-  { nom: "Mascara Volume Extrême",          prix: 8900,  image: "img/img4.jpg" },
-  { nom: "Palette Fards 12 Teintes",        prix: 15500, image: "img/img5.jpg" },
-  { nom: "Crème Hydratante Rose Hip",       prix: 21000, image: "img/img6.jpg" },
-  { nom: "Sérum Vitamine C Éclat",          prix: 28500, image: "img/img7.jpg" },
-  { nom: "Eau de Parfum Floral Rose",       prix: 45000, image: "img/img8.jpg" },
-  { nom: "Lip Liner Précision",             prix: 3200,  image: "img/img9.jpg" },
-  { nom: "Brume Corps Vanille",             prix: 12500, image: "img/img10.jpg" },
-  { nom: "Eye-Liner Waterproof Noir",       prix: 5200,  image: "img/img11.jpg" },
-  { nom: "Huile Corps Sèche Dorée",         prix: 15500, image: "img/img12.jpg" },
+  { nom: "Gloss Brillant Rose Nude",      prix: 4500,  image: "img1.jpg" },
+  { nom: "Rouge à Lèvres Matte Bordeaux", prix: 6800,  image: "img2.jpg" },
+  { nom: "Fond de Teint Fluide HD",        prix: 18500, image: "img3.jpg" },
+  { nom: "Mascara Volume Extrême",          prix: 8900,  image: "img4.jpg" },
+  { nom: "Palette Fards 12 Teintes",        prix: 15500, image: "img5.jpg" },
+  { nom: "Crème Hydratante Rose Hip",       prix: 21000, image: "img6.jpg" },
+  { nom: "Sérum Vitamine C Éclat",          prix: 28500, image: "img7.jpg" },
+  { nom: "Eau de Parfum Floral Rose",       prix: 45000, image: "img8.jpg" },
+  { nom: "Lip Liner Précision",             prix: 3200,  image: "img9.jpg" },
+  { nom: "Brume Corps Vanille",             prix: 12500, image: "img10.jpg" },
+  { nom: "Eye-Liner Waterproof Noir",       prix: 5200,  image: "img11.jpg" },
+  { nom: "Huile Corps Sèche Dorée",         prix: 15500, image: "img12.jpg" },
 ];
 
 // ===========================
